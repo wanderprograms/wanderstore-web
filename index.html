@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wander Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+  <!-- MENU Button yokhazikika -->
+  <button id="menuToggle">☰ MENU</button>
+  
+  <!-- MENU List -->
+  <div id="menuList" class="hidden">
+    <ul>
+      <li onclick="loadSection('home')">HOME</li>
+      <li onclick="loadURL('http://nkhani zanga pa malawi.com')">UPDATES</li>
+      <li onclick="loadURL('https://yourdonatepage.com')">DONATE</li>
+      <li onclick="loadURL('http://wanderslapp.infinityfree.com')">VIDEOS 1</li>
+      <li onclick="loadURL('https://wanderstore.netlify.com')">VIDEOS 2</li>
+      <li onclick="loadURL('https://yourvideos3.com')">MARKETING</li>
+      <li onclick="loadURL('riburary/index.html')">MY APP'S</li>
+      <li onclick="loadURL('https://yourtextphotos.com')">TEXT AND PHOTOS</li>
+      <li onclick="loadURL('https://chatpage.com')">CHATING</li>
+      <li onclick="loadURL('https://livechat.com')">LIVE VIDEO CHATING</li>
+      <li onclick="loadURL('https://musicpage.com')">MUSIC</li>
+      <li onclick="loadURL('games/index.html')">GAMES</li>
+      <li onclick="loadURL('https://yourlinks.com')">LINKS</li>
+      <li onclick="loadURL('https://yourdocs.com')">DOCUMENT & FILES</li>
+      <li onclick="loadSection('contacts')">CONTACTS</li>
+    </ul>
+  </div>
+
+  <!-- MAIN Sections -->
+  <main>
+    <section id="home" class="content-section">
+      <header>
+   <header class="main-header">
+  <nav class="navbar">
+    <div class="logo">WanderStore</div>
+  </nav>
+
+  <div id="header-slideshow" class="slim-slideshow"></div>
+  </header>
+
+      <p>Use the MENU to explore your sections.</p>
+    </section>
+
+    <section id="contacts" class="content-section hidden">
+      <h2>Contact Us</h2>
+      <div class="contact-buttons">
+        <button onclick="redirectTo('mailto:wanderslappprograms@gmail.com')">
+          <img src="images/mail1.jpg" alt="Email" /> Email
+        </button>
+        <button onclick="redirectTo('tel:0899535951')">
+          <img src="images/call1.png" alt="Call" /> Call 1
+        </button>
+        <button onclick="redirectTo('tel:0990914737')">
+          <img src="images/call2.jpeg" alt="Call" /> Call 2
+        </button>
+        <button onclick="redirectTo('https://wa.me/2659990914737')">
+          <img src="images/whatsapp.jpg" alt="WhatsApp" /> WhatsApp 1
+        </button>
+        <button onclick="redirectTo('https://wa.me/265899535951')">
+          <img src="images/whatsapp.jpg" alt="WhatsApp" /> WhatsApp 2
+        </button>
+        <button onclick="redirectTo('https://www.facebook.com/isaacsupersaax.wanderford.1')">
+          <img src="images/facebook.jpg" alt="Facebook" /> Facebook
+        </button>
+      </div>
+    </section>
+
+    <section id="iframeSection" class="content-section hidden">
+      <iframe id="iframeViewer" src="" frameborder="0"></iframe>
+    </section>
+    </main>
+  
+ <div id="donationBanner" class="modal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal()">❌ Tsekani</button>
+
+    <div class="modal-body">
+      <img src="images/love1.png" alt="Thandizo" class="modal-image" />
+      <div class="modal-text">
+        <p>
+          Nsungwana mukumuona pachithunziwu ndi nchemali wanga.
+          sister wangayu analemba nawo  mayeso a STD 8, ndipo amusankhila ku,
+          Mulanje Boading Secondery School.<br><br>
+          Ku school ku fees ndi 205,000. Ndalamayi kunena zoona kwaine potengela
+          mmene ndimapezera ndiyayikulu kwambili,  makolonso nawo amadalira ine kuti
+          ndiwaponyele ya nchele.
+          <br><br>
+          Ndiye ndabweletsa nkhaniyi pano kuti mwina ngati nkotheka ena a mtima wa chifundo,
+          atithandizeko mwakufuna ndi kukoma mtima kwawo, osati mokakamizika ayi. Chonde abale
+          anga inu okondedwa, chonde ndikukupemphani🙏. Chimveni muntima.
+          Ndipo dziwani kuti ndizathokoza kwambiri ngati mutachitapo kanthu, ndipo ndizayamikila 
+          chilichonse chomwe mungachite kwa ine, mwakufuna kwanu.
+          <br><br>
+          Dziwani izi:
+          Mungathe kulandila <strong>Madalitso</strong>  chifukwa cha <mark>K100</mark> yomwe mungapeleke
+          ndimtima wanu onse <br><br>
+          ndikufunilani zabwino zonse.
+          pitilizani kusangalala  ndi <strong>website ino</strong>.
+          pa website yi  pali zambili 
+          monga; <br><br>
+          Kuphunzila <strong>kupanga <mark>website step by step</mark>
+            ma  video, nyimbo, nsika, kucheza, nyimbo ndi dzina zambiri
+        </p>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="donate-btn" onclick="openDonate()">Donate Now</a>
+  </div>
+</div>
+   
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WanderDrive v3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="gameArea">
+    <img id="background" src="images/forestRoad.jpg" alt="road">
+    <img id="car" src="images/motor1.jpeg" alt="motor">
+    <div id="obstacles"></div>
+    <div id="scoreBoard">Score: 0</div>
+    <div id="gameOver">GAME OVER</div>
+    <div id="levelPopup"></div>
+
+    <!-- UI Buttons -->
+    <div id="topLeft">
+      <button onclick="showInfo()">ℹ️ Info</button>
+      <button onclick="resetScore()">🧹 Clear Score</button>
+    </div>
+    <div id="topRight">
+      <button onclick="boostSpeed()">⚡ Boost</button>
+      <button onclick="toggleMute('bgMusic')" id="muteBtn">🔇 Mute</button>
+    </div>
+
+    <!-- Directional Controls with Continuous Movement -->
+    <div id="directionalControls">
+      <div>
+        <button 
+          onmousedown="startMoving('up')" 
+          onmouseup="stopMoving()" 
+          ontouchstart="startMoving('up')" 
+          ontouchend="stopMoving()">⬆️</button>
+      </div>
+      <div>
+        <button 
+          onmousedown="startMoving('left')" 
+          onmouseup="stopMoving()" 
+          ontouchstart="startMoving('left')" 
+          ontouchend="stopMoving()">🔚</button>
+
+        <button 
+          onmousedown="startMoving('right')" 
+          onmouseup="stopMoving()" 
+          ontouchstart="startMoving('right')" 
+          ontouchend="stopMoving()">🔜</button>
+      </div>
+      <div>
+        <button 
+          onmousedown="startMoving('down')" 
+          onmouseup="stopMoving()" 
+          ontouchstart="startMoving('down')" 
+          ontouchend="stopMoving()">⬇️</button>
+      </div>
+    </div>
+
+    <!-- Restart and Brake -->
+    <div id="restartBtn">
+      <button onclick="resetGame()">🔄 Restart</button>
+    </div>
+    <div id="brakeBtn">
+      <button onclick="pauseGame()">♒ Brake</button>
+    </div>
+
+    <!-- Info Modal -->
+    <div id="infoModal" style="display:none;">
+      <p>WanderDrive v3 — Offline Racing Fun 🚗</p>
+      <button onclick="hideInfo()">⬅️ Back</button>
+    </div>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="bgMusic" src="sounds/background.mp3" loop autoplay></audio>
+  <audio id="boostSound" src="sounds/boost.m4r"></audio>
+  <audio id="crashSound" src="sounds/crash.mp3"></audio>
+  <audio id="levelSound" src="sounds/levelup.m4r"></audio>
+  <audio id="clickSound" src="sounds/click.wav"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
