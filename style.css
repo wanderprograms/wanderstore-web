@@ -225,3 +225,29 @@ main {
 .donate-btn:hover {
   background-color: #218838;
 }
+ /* copyright */
+   #copyright-message {
+  font-size: 0.75em;            /* 🔧 Uchepetsa size ya mawu */
+  font-weight: 400;             /* 🔧 Mawu asakhale a bold (400 = normal) */
+  font-style: italic;           /* 🔧 Mawu apange style ya italic (kapenanso onjezere ngati mukufuna) */
+  color: #666;                  /* 🔧 Mtundu wa mawu — osakhala wakuda kwambiri */
+  text-align: center;
+  margin-top: 60px;
+  padding: 10px 14px;
+  background-color: #f3f3f3;
+  border-top: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Segoe UI", sans-serif;  /* 🔧 Font yokongola ya UI */
+ }
+ /* Logo Above Menu */
+ .logoAboveMenu {
+  display: flex;
+  justify-content: left; /* left the logo */
+  align-items: left;
+  margin-top: 5px;
+  padding-left: 20px;
+  background-color: transparent;
+  }
+  .logoAboveMenu img {
+     height: 60px; /* Small logo */
+ }
