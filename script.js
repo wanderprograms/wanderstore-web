@@ -102,7 +102,7 @@ function openDonate() {
 }
 
 // Bwereza modal iliyonse 15 seconds
-setInterval(showModal, 15000);
+setInterval(showModal, 60000);
 
 // Function ya iframe loader
 function loadURL(url) {
